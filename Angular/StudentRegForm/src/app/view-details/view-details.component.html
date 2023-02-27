@@ -1,0 +1,8 @@
+<h1 style="text-align: center;">User Datas</h1>
+<table style="margin-left: 10%;">
+    <tr *ngFor="let datas of locstor">
+        <td *ngFor="let data of datas | keyvalue" style="padding: 20px;">
+            {{data.value}}
+        </td>
+    </tr>
+</table>

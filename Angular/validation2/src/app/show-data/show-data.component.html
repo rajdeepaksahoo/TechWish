@@ -1,0 +1,14 @@
+
+<h1>DATA</h1>
+<table>
+    <tr>
+        <th>Pass</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    <tr *ngFor="let d of nnn ">
+        <td *ngFor="let dd of d | keyvalue"  >
+            {{dd.value}}
+        </td>
+    </tr>
+</table>

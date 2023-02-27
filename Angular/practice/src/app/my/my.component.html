@@ -1,0 +1,61 @@
+<div id="tab">
+    <table border="1px">
+      <tr>
+        <th *ngFor="let head of headers">
+          {{head}}
+        </th>
+      </tr>
+
+      <tr *ngFor="let row of tableData">
+        <td *ngFor="let column of headers">
+            {{row[column]}}
+        </td>
+      </tr>
+  </table>
+  <h1>Json Data In Table</h1>
+
+
+
+
+
+
+
+
+  <table border="1px" style="border-collapse: collapse; width: 80%; margin-left: 10%;">
+    <tr>
+      <th>
+        Id
+      </th>
+      <th>
+        Title
+      </th>
+      <th>
+        Completed
+      </th>
+    </tr>
+
+
+
+
+    <tr *ngFor="let row of posts | paginate:{
+      itemsPerPage:tableSize,
+      currentPage:page,
+      totalItems:count
+    } ">
+      <td class="ic">
+          {{row.id}}
+      </td>
+      <td >
+        {{row.title}}
+    </td>
+    <td class="ic">
+      {{row.completed}}
+  </td>
+    </tr>
+  </table>
+
+</div>
+<div id="pages">
+  <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)" >
+  </pagination-controls>
+</div>

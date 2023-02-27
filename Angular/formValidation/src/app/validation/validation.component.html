@@ -1,0 +1,21 @@
+<form [formGroup]="validation">
+
+    <label for="name">Name</label><pre></pre>
+    <input type="text" name="name" formControlName="name" id=""><pre></pre>
+    <span *ngIf="name.touched && name.invalid">Invalid Name</span><pre></pre>
+
+    <label for="mob">Mobile</label><pre></pre>
+    <input type="number" name="mob" formControlName="mob" id=""><pre></pre>
+    <span *ngIf="mob.touched && mob.invalid">Invalid Mobile No</span><pre></pre>
+
+    <label for="mail">Email Id</label><pre></pre>
+    <input type="text" name="mail" formControlName="mail" id=""><pre></pre>
+    <span *ngIf="mail.touched && mail.invalid">Invalid E-Mail</span><pre></pre>
+
+    <label for="pass">Password</label><pre></pre>
+    <input type="password" name="pass" formControlName="pass" id=""><pre></pre>
+    <span *ngIf="pass.touched && pass.invalid">Invalid Password</span><pre></pre>
+
+    <button>Submit</button>
+
+</form>

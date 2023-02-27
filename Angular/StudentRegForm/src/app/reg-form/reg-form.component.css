@@ -1,0 +1,9 @@
+.add{
+    padding: 10px;
+}
+.disabled {
+    opacity: 0.6;
+}
+.disabled:hover {
+    cursor: wait;
+}

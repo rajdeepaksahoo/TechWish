@@ -1,0 +1,48 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ip{
+    margin-left: 20px;
+}
+#sel{
+    width: 78px;
+    
+}
+.gen{
+    margin-right: 10px;
+}
+.btnn{
+    width: 100px;
+    margin: 25px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+#sub{
+    background-color: lime;
+}
+#sub:hover{
+    background-color: rgb(21, 129, 21);
+    color: aliceblue;
+}
+#sub:active{
+    background-color: rgb(116, 238, 116);
+    color: black;
+}
+#re{
+    background-color: rgb(243, 43, 43);
+}
+#re:hover{
+    background-color: rgb(185, 14, 14);
+    color: aliceblue;
+}
+#re:active{
+    background-color: rgb(235, 138, 138);
+    color: black;
+}
+.cb{
+    margin-left: 80px;
+}

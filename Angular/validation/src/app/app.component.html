@@ -1,0 +1,19 @@
+<form action="" [formGroup]="loginForm">
+  <label for="un">User Name : </label><pre></pre>
+  <input formControlName='un' type="text" name="un" id="un"><pre></pre>
+  <span style="color: red;" *ngIf="un.invalid && un.touched">Invalid User-Name</span><pre></pre>
+  <pre></pre>
+
+  <label for="fn">Mobile No : </label><pre></pre>
+  <input formControlName="mob" type="text" name="mob" id="mob">
+  <pre></pre>
+  <span style="color: red;" *ngIf="mob.invalid && mob.touched">Invalid Mobile Number</span><pre></pre>
+
+  <label for="fn">Passward : </label><pre></pre>
+  <input formControlName="pass" type="text" name="pass" id="pass">
+  <pre></pre>
+  <span style="color: red;" *ngIf="pass.invalid && pass.touched">Invalid Email Id</span><pre></pre>
+
+  
+  <button>Submit</button>
+</form>

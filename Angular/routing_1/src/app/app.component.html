@@ -1,0 +1,14 @@
+<nav>
+  <a routerLink="" routerLinkActive="active">Home</a>
+  <a routerLink="/users">Users</a>
+  <a routerLink="/catagories">Catagory</a>
+  <a routerLink="" routerLinkActive="active">Home</a>
+</nav>
+
+<button (click)="navigatePage()">Go To Catagories</button>
+<div style="border: 1px solid red;">
+  <a [routerLink]="['/users',1,'Eneesha']" [queryParams]="{id:1,name:'Eneesha'}" [fragment]="'loading'">Users</a>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>

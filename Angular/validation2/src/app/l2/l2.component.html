@@ -1,0 +1,9 @@
+<form [formGroup]='regform' action="" (ngSubmit)="show()">
+    Name : <input #n type="text" formControlName="na" name="" id="">
+    email : <input #e type="text" formControlName="email" name="" id="">
+    Password : <input #p type="text" formControlName="pass" name="" id="">
+    <button>Submit</button>
+</form>
+<div>
+    <app-show-data></app-show-data>
+</div>

@@ -1,0 +1,11 @@
+<div style="display: flex;" >
+    <div *ngFor="let product of arr" style="border: 1px solid red;width: 180px;" >
+            <div style="height: 150px;">
+                <img style="width: 150px;" src={{product.image}} alt="">
+            </div>
+           <div style="margin-top: 20px;">
+            <span>{{product.title}}</span><br>
+            <button style="margin-left: 20%;"><a href="">Show Details</a></button>
+           </div>
+    </div>
+</div>
